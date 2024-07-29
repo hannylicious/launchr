@@ -40,7 +40,7 @@ Install [Docker](https://docs.docker.com/install/) and [Docker Compose](https://
 To create a new project, open up a terminal and clone Launchr to your current working directory:
 
 ```
-git clone https://github.com/jayfk/launchr.git
+git clone https://github.com/hannylicious/launchr.git
 ```
 
 Move the repository you just cloned to the one your are going to use for your project:

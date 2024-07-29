@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'djstripe',
-    'captcha',
+    'django_recaptcha',
     'users',
 ]
 
@@ -39,6 +39,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ########################################
@@ -54,6 +55,7 @@ ALLOWED_HOSTS = []
 ROOT_URLCONF = 'urls'
 WSGI_APPLICATION = 'wsgi.application'
 SITE_ID = 1
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ########################################
 # TEMPLATES
